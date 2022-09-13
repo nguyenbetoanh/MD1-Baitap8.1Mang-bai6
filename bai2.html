@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+Bài 2: Viết một chương trình để in các ký tự trong một mảng theo thứ tự đảo ngược. Ví dụ, nếu
+một mảng chứa các ký tự [ 'c', 's', 'c', '2', '6', '1' ] sau khi thực hiện đảo ngược sẽ là "162csc"
+<h1>đảo ngược các phần tử</h1>
+<h2 id="ht"></h2>
+<h1 id="daonguoc"> </h1>
+<input type="text" id="ptMoi">
+<button onclick="themPT()">thêm phần tử</button>
+<button onclick="daoNguoc()">daoNguoc</button>
+<script>
+  let array =[]
+  function themPT(){
+    let themPT =document.getElementById('ptMoi').value;
+    array.push(themPT)
+    document.getElementById('ht').innerHTML="các phần tử đã đã thêm vào là : "+array
+  }
+  function daoNguoc(){
+    array.reverse()
+    array.toString()
+    document.getElementById('daonguoc').innerHTML="các phần tử đã đã đảo ngược là : "+array
+  }
+</script>
+</body>
+</html>

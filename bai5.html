@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    h2{
+      color: red;
+    }
+    h3{
+      color: cyan;
+    }
+  </style>
+</head>
+<body>
+<!--Bài 5: Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay-->
+<!--không.-->
+<h1>Bài 5: Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay
+  không.
+</h1>
+
+<h1>tìm xem V có nằm trong mảng số nguyên không?</h1>
+<h2 id="ht"></h2>
+nhập 1 chuỗi số nguyên vào <br>
+<input type="text" id="ptMoi">
+<button onclick="themPT()">thêm phần tử</button>
+<br> <br> <br>
+nhập 1 số chuỗi  V cần check <br>
+<h3 id="htNew" ></h3>
+<input type="text" id="new">
+<button onclick="newPT()">thêm PT cần check</button>
+<br> <br> <br>
+<button onclick="check()">Hiển thị kết quả </button>
+<br>
+<h1 id="ketQua"> </h1>
+<script>
+  let array =[]
+  function themPT(){
+    let themPT =document.getElementById('ptMoi').value;
+    array.push(themPT)
+    document.getElementById('ht').innerHTML="các phần tử đã đã thêm vào là : " + array
+  }
+  let newArr =[]
+  function newPT(){
+    let newPT =document.getElementById('new').value;
+    newArr.push(newPT)
+    document.getElementById('htNew').innerHTML="các phần tử cần check   là : " + newArr
+  }
+  function check(){
+    for (let i = 0; i <array.length ; i++) {
+      for (let j = 0; j <newArr.length ; j++) {
+        if (newArr[j] ===array[i]){
+          document.getElementById('ketQua').innerHTML="2 chuỗi giống nhau "
+        }else {
+          document.getElementById('ketQua').innerHTML="2 chuỗi khác nhau "
+        }
+      }
+    }
+  }
+</script>
+</body>
+</html>

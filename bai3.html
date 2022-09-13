@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 3: Viết một chương trình khai báo một mảng ký tự và kích thước của mảng. Chương trình này-->
+<!--đếm số ký tự số trong mảng.-->
+<h1>Khai báo một mảng ký tự và kích thước của mảng và đếm số ký tự số trong mảng</h1>
+<h2 id="ht"></h2>
+<script>
+    let array =[20,-1,14,6,-47,78,0,24,-69,89]
+    function CountNA(){
+        count =0;
+        for (let i = 0; i <= array.length ; i++) {
+            if ( array[i]!==-1){
+                count++
+            }
+        }
+        document.getElementById('ht').innerHTML= "có tất cả  "+ count
+
+    }
+    CountNA()
+
+
+</script>
+</body>
+</html>

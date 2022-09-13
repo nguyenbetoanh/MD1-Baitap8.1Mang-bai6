@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<!--Bài 4: Viết một chương trình để đếm số từ trong một chuỗi-->
+<h1>Bài 4: Viết một chương trình để đếm số từ trong một chuỗi</h1>
+<h2 id="ht"></h2>
+<script>
+  let array =prompt("nhap di")
+  let trag="";
+  let kq
+  let arrRong=[]
+  let strArray= array.trim().split(" ")
+  for (let i = 0; i <strArray.length ; i++) {
+    if (strArray[i]!==trag){
+      arrRong.push(strArray[i])
+      kq= arrRong.length
+      console.log(kq)
+    } document.getElementById('ht').innerHTML=kq
+  }
+</script>
+</body>
+</html>

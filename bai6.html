@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 6: Viết chương trình nhập vào một mảng ký tự, tìm tất cả các ký tự trong mảng là (-) và thay thế-->
+<!--các ký tự này bởi ký tự ( _ )-->
+<h1>Bài 6: Viết chương trình nhập vào một mảng ký tự, tìm tất cả các ký tự trong mảng là (-) và thay thế
+  các ký tự này bởi ký tự ( _ )</h1>
+
+<h2 id="ht"></h2>
+<h1 id="daonguoc"> </h1>
+<input type="text" id="ptMoi">
+<button onclick="themPT()">thêm phần tử</button>
+<button onclick="daoNguoc()">daoNguoc</button>
+<script>
+  let array =[]
+  function themPT(){
+    let themPT =document.getElementById('ptMoi').value;
+    array.push(themPT)
+    document.getElementById('ht').innerHTML="các phần tử đã đã thêm vào là : "+array
+  }
+  function daoNguoc(){
+    array.join("-")
+    document.getElementById('daonguoc').innerHTML="các phần tử đã đã chuyển đổi là : "+array
+  }
+</script>
+</body>
+</html>
